@@ -1,0 +1,133 @@
+/* styles for the entire html */ 
+body {
+	padding:0;
+    margin:0;
+    background-color: #a6b798;
+	font-family: "MV Boli"; 
+	font-weight: bold;
+	font-size: 125%;
+	text-align: center;
+	text-decoration: none;
+}
+html {
+	zoom: 100%;
+}
+
+
+/* styles for 3 semantic tags */ 
+section {
+    background-color: #f9f9ee;
+    padding: 1% 4%;
+    margin: 2.5% 8%;
+    overflow: auto;
+	border-radius: 65px;
+	text-align: left;
+}
+article {
+	width: 25%;
+	height: 100%;
+    background-color: #b8c6Ac;
+    padding: 2%;
+    margin: 1.4%;
+	float: left; 
+    overflow: auto;
+	border-radius: 40px;
+	border: 7px dashed #a6b798;
+	text-align: center;
+}
+figure {
+	margin: 0%;
+}
+
+
+/* styles for the navigation bar */
+nav {
+	font-family: "Century Gothic";
+	font-weight: bold;
+	background-color: #232538;
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	border-bottom: 7px dashed #413d6b; 
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f9f9ee;
+  text-align: center;
+  padding: 1%;
+  font-size: 100%;
+}
+
+nav a:hover {
+  background-color: #f9f9ee;
+  color: #3e4243;
+}
+
+
+/* styles for different types of images */ 
+.full_width {
+    width:100%;
+	border-bottom: 10px dashed #f9f9ee; 
+}
+.side_icon {
+    width: 15%;
+    height: 15%;
+	border-radius: 50%;
+	margin: 1% 3% 1% 3%;
+}
+.side_image {
+    width: 22%;
+    height: 22%;
+	border-radius: 50%;
+	margin: 1% 3% 1% 3%;
+}
+.poster {
+    width: 100%;
+    height: 100%;
+	border-radius: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.chara {
+    width: 100%;
+    height: 100%; 
+	border-radius: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* styles for different types of texts */ 
+p {
+	color: #63674b;
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, summary {
+	font-family: "Segoe Script"; 
+	color: #4b453a;
+}
+figcaption {
+	font-size: 70%;
+	color: #a6b798;
+}
+.summary {
+	font-size: 75%;
+	text-align: justify;
+	text-indent: 5%;
+	padding: 0px 3%;
+}
+
+
+/* changes the color of the selected element when hovered over, 
+this is to indicate that the element is interactable (link) */ 
+a > section:hover, a > div.divider:hover {
+    background-color: white;
+}
+a > article:hover, a > div.button:hover {
+    background-color: #D2E1C4;
+}
+
