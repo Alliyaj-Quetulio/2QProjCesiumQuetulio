@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Marra Alliyaj Nicole Quetulio">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
-	<meta name="revised" content="13-01-2022">
-    <title> Ghibli's Art </title>
+	<meta name="revised" content="07-02-2022">
+	<title> Ghibli's Art </title>
 	
 	<link rel="icon" type="image/icon" href="images/icon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -13,79 +13,102 @@
  </head>
 	<body>
 		<nav>
-			<a href="index.html"> Home </a>
-			<a href="#"> Studio Ghibli </a>
-			<a href="htdocs/spirited_away.html"> Spirited Away </a>
-			<a href="#"> Howl's Moving Castle </a>
-			<a href="#"> Ponyo </a>
-			<a href="htdocs/references.html"> References </a>
-		</nav>
-		
-		<nav style = "visibility:hidden; position: static">
-			<a href="#"> # </a>
+			<div class = "left">
+				<a href = "index.html"> 
+					<div class = "home"></div>
+				</a>
+				<a href = "htdocs/studio_ghibli.html"> Studio Ghibli </a>
+				<a href = "htdocs/spirited_away.html"> Spirited Away </a>
+				<a href = "htdocs/hmc.html"> Howl's Moving Castle </a>
+				<a href = "htdocs/ponyo.html"> Ponyo </a>
+				<a href = "htdocs/references.html"> References </a>
+			</div>
+	
+			<div class = "right">
+				<a href = "https://twitter.com/JP_GHIBLI"> 
+					<div class = "twitter"></div>
+				</a>
+				<a href = "https://www.facebook.com/FansOfStudioGhibli"> 
+					<div class = "facebook"></div>
+				</a>
+				<a href = "https://www.ghibli.jp/"> 
+					<div class = "website"></div>
+				</a>
+			</div>
 		</nav>
 	
 		<header>
 			<figure>
-				<img class="full_width" src = "images/totoro.png" alt = "title image">
+				<img class = "full_width" src = "images/totoro.png" alt = "title image">
 			</figure>
 		</header>
-	
-		<section style="padding: 0.5% 3% 0.5% 0.5%">
-			<figure>
-				<img style="float: left" class = "side_icon" src = "images/intro.jpg">
+
+		<section class = "container flex centerflex">
+			<figure style = "margin-right: 2%">
+				<img class = "side_icon" src = "images/intro.jpg">
 			</figure>
-			<header>
-				<h1> Introduction </h1>
-			</header>
-			<p> Welcome to Ghibli's Art! A website where you can learn the makings of Studio Ghibli, as well as information on its top 3 best selling movies: Spirited Away, Howl’s Moving Castle, and Ponyo.</p>
-		</section>
-		
-		<a href="#">
-			<section style="padding: 0.5% 3% 0.5% 0.5%">
-				<figure>
-					<img style="float: left" class = "side_icon" src = "images/makings.jpg">
-				</figure>
+			<div>
 				<header>
-					<h1> The Makings of Studio Ghibli </h1>
+					<h1> Introduction </h1>
 				</header>
-				<p> Find out how Studio Ghibli came to be, and how they were able to make the iconic movies they are now well-known for.</p>
-			</section>
-		</a>
+				<p> Welcome to Ghibli's Art! A website where you can learn the makings of Studio Ghibli, as well as information on its top 3 best selling movies: Spirited Away, Howl’s Moving Castle, and Ponyo.</p>
+			</div>
+		</section>
 		
 		<section>
-			<header>
-				<h1 style="text-align: center"> Best Selling Movies </h1>
-			</header>
-			<a href="htdocs/spirited_away.html">
-				<article>
-					<figure>
-						<img class="poster" src="images/spirited_away.jpg">
+			<a href = "htdocs/studio_ghibli.html" class = "flex link" style = "margin: -2.5% 0%">
+				<div class = "container flex centerflex">	
+					<figure style = "margin-right: 2%">
+						<img class = "side_icon" src = "images/makings.jpg">
 					</figure>
-					<h3> Spirited Away </h3>
-					<p style = "font-size: 90%"> While moving into a new neighbourhood with her family, a ten-year-old girl named Chihiro Ogino enters a strange world ruled by gods, witches, and spirits.</p>
-				</article>
-			</a>
-        
-			<a href="#">
-				<article>
-					<figure>
-						<img class="poster" src="images/hmc.jpg">
-					</figure>
-					<h3> Howl's Moving Castle </h3>
-					<p style = "font-size: 90%"> When Sophie is cursed with an old body by a witch, her only chance of breaking the spell lies with a young wizard, Howl, and his companions in his walking castle.</p> 
-				</article>
-			</a>
-        
-			<a href="#">
-				<article>
-					<figure>
-						<img class="poster" src="images/ponyo.jpg">
-					</figure>
-					<h3> Ponyo </h3>
-					<p style="font-size: 90%"> Sosuke, a five-year-old boy, rescues and develops a relationship with Ponyo, a young goldfish princess who longs to become a human girl after falling in love with him.</p>
-				</article>
+					<div>
+						<header>
+							<h1> The Makings of Studio Ghibli </h1>
+						</header>
+						<p> Studio Ghibli is an animation studio best known for its animated feature films. But how exactly did the studio earn such recognition? </p>
+					</div>
+				</div>
 			</a>
 		</section>
+	
+		<section class = "container">
+			<header>
+				<h1 style = "text-align: center"> Best Selling Movies </h1>
+			</header>
+			<section class="flex">
+				<article class = "purple link">
+					<a href = "htdocs/spirited_away.html">
+						<figure>
+							<img class = "poster" src = "images/sa.jpg">
+						</figure>
+						<h3> Spirited Away </h3>
+						<p style = "font-size: 80%"> While moving into a new neighbourhood with her family, a ten-year-old girl named Chihiro Ogino enters a strange world ruled by gods, witches, and spirits.</p>
+					</a>
+				</article>
+				
+				<article class = "pink link">
+					<a href = "htdocs/hmc.html">
+						<figure>
+							<img class = "poster" src = "images/hmc.jpg">
+						</figure>
+						<h3> Howl's Moving Castle </h3>
+						<p style = "font-size: 80%"> When Sophie is cursed with an old body by a witch, her only chance of breaking the spell lies with a young wizard, Howl, and his companions in his walking castle.</p> 
+					</a>
+				</article>
+				
+				<article class = "beige link">
+					<a href = "htdocs/ponyo.html">
+						<figure>
+							<img class = "poster" src = "images/ponyo.jpg">
+						</figure>
+						<h3> Ponyo </h3>
+						<p style = "font-size: 80%"> Sosuke, a five-year-old boy, rescues and develops a relationship with Ponyo, a young goldfish princess who longs to become a human girl after falling in love with him.</p>
+					</a>
+				</article>	
+			</section>
+		</section>
+		
+		<br> <br>
+		
 	</body>
 </html>
